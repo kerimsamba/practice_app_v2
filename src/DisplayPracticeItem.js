@@ -1,4 +1,5 @@
 import React from 'react';
+import YouTubePlayer from './YouTubePlayer';
 import './components.css';
 
 const YouTubePlayer = () => {
@@ -23,7 +24,7 @@ const DisplayPracticeItem = ({ practice_item }) => {
       <p>History: {practice_item.history || "Placeholder"}</p>
       <p>Date Added: {practice_item.dateAdded || "Placeholder"}</p>
       <p>Date Amended: {practice_item.dateAmended || "Placeholder"}</p>
-      <YouTubePlayer />
+      <YouTubePlayer youtubeLink={practice_item.youtubeLink} />
       <DrumMachine />
       <BackingTrack />
     </div>

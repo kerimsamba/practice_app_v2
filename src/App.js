@@ -42,7 +42,9 @@ export default function App() {
     history: "Sample History",
     dateAdded: "2023-04-21",
     dateAmended: "2023-04-22",
+    youtubeLink: "https://www.youtube.com/watch?v=Zfr3L0drhS8",
   };
+  
 
   return (
     <div className="container">
