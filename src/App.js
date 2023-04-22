@@ -8,7 +8,9 @@ const FetchPracticeItem = () => {
   };
 
   return (
-    <button onClick={handleClick}>Fetch Practice Item</button>
+    <button className="square-button fetch-button" onClick={handleClick}>
+      Fetch Practice Item
+    </button>
   );
 };
 
@@ -18,7 +20,9 @@ const AddPracticeItem = () => {
   };
 
   return (
-    <button onClick={handleClick}>Add Practice Item</button>
+    <button className="square-button add-button" onClick={handleClick}>
+      Add Practice Item
+    </button>
   );
 };
 
@@ -44,20 +48,21 @@ export default function App() {
     dateAmended: "2023-04-22",
     youtubeLink: "https://www.youtube.com/watch?v=Zfr3L0drhS8",
   };
-  
 
-  return (
-    <div className="container">
-      <header className="header">
-        <h1>Music Practice App</h1>
-        <EditAll />
-      </header>
-      <DisplayPracticeItem practice_item={practice_item} />
-      <div className="button-container">
-        <FetchPracticeItem />
-        <AddPracticeItem />
-      </div>
+
+return (
+  <div className="container">
+    <header className="header">
+      <h1>Music Practice App</h1>
+      <EditAll />
+    </header>
+    <DisplayPracticeItem practice_item={practice_item} />
+    <div className="bottom-button-container">
+      <AddPracticeItem />
+      <FetchPracticeItem />
     </div>
-  );
+  </div>
+);
 }
+
 
